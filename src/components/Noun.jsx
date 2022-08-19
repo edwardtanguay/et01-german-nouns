@@ -5,7 +5,7 @@ export const Noun = ({ noun, setNouns, nouns }) => {
 	};
 
 	return (
-		<div className="noun" onClick={() => toggleAnswerIsShowing(noun)}>
+		<div className={noun.answerIsShowing ? 'noun backShowing' : 'noun frontShowing'} onClick={() => toggleAnswerIsShowing(noun)}>
 			{!noun.answerIsShowing && (
 				<div className="front">{noun.singular}</div>
 			)}

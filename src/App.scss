@@ -9,8 +9,16 @@ body {
       justify-content: center;
       flex-direction: column;
     .nounArea {
+
+      .backShowing {
+        background-color: #222;
+      }
+
+      .frontShowing {
+        background-color: #444; 
+      }
+
       .noun {
-        background-color: #555;
         margin-bottom: 1rem;
         cursor: pointer;
         height: 3rem;
