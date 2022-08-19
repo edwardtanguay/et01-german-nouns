@@ -1,12 +1,18 @@
-import './App.css'
+import { useState } from 'react';
+import './App.css';
+
+const baseUrl = 'https://edwardtanguay.netlify.app/share';
+const flashcardsUrl = `${baseUrl}/flashcards.json`;
+const germanNounsUrl = `${baseUrl}/germanNouns.json`;
 
 function App() {
-  return (
-    <div className="App">
-      <h2>German Nouns</h2>
-      <p>test</p>
-    </div>
-  )
+	const [nouns, setNouns] = useState([]);
+	return (
+		<div className="App">
+			<h2>German Nouns</h2>
+			<p>There are {nouns.length} nouns.</p>
+		</div>
+	)
 }
 
 export default App
