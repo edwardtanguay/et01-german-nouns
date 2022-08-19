@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { NounArea } from './components/NounArea';
 import './App.scss';
+import { NounArea } from './components/NounArea';
 
 const baseUrl = 'https://edwardtanguay.netlify.app/share';
 const flashcardsUrl = `${baseUrl}/flashcards.json`;
