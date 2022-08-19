@@ -25,7 +25,8 @@ function App() {
 
 	return (
 		<div className="App">
-			<NounArea nouns={nouns} />
+
+			<NounArea nouns={nouns} setNouns={setNouns} />
 		</div>
 	);
 }
