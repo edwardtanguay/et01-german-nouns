@@ -1,19 +1,19 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  background-color: #333;
+  font-family: sans-serif;
   text-align: center;
-}
 
-.App {
-  .nounArea {
-    .noun {
-      background-color: #555;
-      margin-bottom: 1rem;
-      cursor: pointer;
+  .App {
+    .nounArea {
+      .noun {
+        background-color: #555;
+        margin-bottom: 1rem;
+        text-align: center;
+        cursor: pointer;
 
-      .singular {
-        color: yellow;
+        .singular {
+          color: yellow;
+        }
       }
     }
   }
