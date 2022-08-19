@@ -1,5 +1,4 @@
 - x get data from API and display how many items
-- .. show all nouns with all properties
-
-- break into components
+- x show all nouns with all properties
+- .. break into components
 
