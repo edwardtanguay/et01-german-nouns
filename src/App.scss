@@ -10,6 +10,10 @@
     .noun {
       background-color: #555;
       margin-bottom: 1rem;
+      .singular {
+        color: yellow;
+        cursor: pointer;
+      }
     }
   }
 }
