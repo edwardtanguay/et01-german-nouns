@@ -2,9 +2,9 @@
 - x show all nouns with all properties
 - x break into components
 - .. make nouns interactive flashcards
-	- .. show on page load only singular
-		- .. add answerIsShowing (boolean) to every object in nouns, default: false
-		- Noun.jsx: conditional rendering on answerIsShowing
-	- enable click on singular to toggle article and plural
+	- x show on page load only singular
+		- x add answerIsShowing (boolean) to every object in nouns, default: false
+		- x Noun.jsx: conditional rendering on answerIsShowing
+	- .. enable click on singular to toggle article and plural
 
 
