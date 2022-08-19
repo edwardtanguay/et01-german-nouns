@@ -1,9 +1,13 @@
 export const Noun = ({ noun }) => {
 	return (
 		<div className="noun">
-			<div className="article">{noun.article}</div>
+			{noun.answerIsShowing && (
+				<div className="article">{noun.article}</div>
+			)}
 			<div className="singular">{noun.singular}</div>
-			<div className="plural">{noun.plural}</div>
+			{noun.answerIsShowing && (
+				<div className="plural">{noun.plural}</div>
+			)}
 		</div>
 	);
 };

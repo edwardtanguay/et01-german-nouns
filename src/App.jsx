@@ -13,6 +13,12 @@ function App() {
 		(async () => {
 			const response = await fetch(germanNounsUrl);
 			const _nouns = await response.json();
+
+			//decorate nouns
+			_nouns.forEach(noun => {
+				noun.answerIsShowing = false;
+			});
+
 			setNouns(_nouns);
 		})();
 	}, []);
