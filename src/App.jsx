@@ -4,7 +4,6 @@ import { NounArea } from './components/NounArea';
 import { shuffle } from './tools';
 
 const baseUrl = 'https://edwardtanguay.netlify.app/share';
-const flashcardsUrl = `${baseUrl}/flashcards.json`;
 const germanNounsUrl = `${baseUrl}/germanNouns.json`;
 
 function App() {
