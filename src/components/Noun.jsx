@@ -6,12 +6,11 @@ export const Noun = ({ noun, setNouns, nouns }) => {
 
 	return (
 		<div className="noun" onClick={() => toggleAnswerIsShowing(noun)}>
-			<div className="singular">{noun.singular}</div>
-			{noun.answerIsShowing && (
-				<div className="article">{noun.article}</div>
+			{!noun.answerIsShowing && (
+				<div className="front">{noun.singular}</div>
 			)}
 			{noun.answerIsShowing && (
-				<div className="plural">{noun.plural}</div>
+				<div className="back"><span className={noun.article}>{noun.article}</span> <span className="singular">{noun.singular}</span><span className="separator"> - </span><span className={noun.article}>{noun.plural}</span></div>
 			)}
 		</div>
 	);
