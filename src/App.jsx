@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { NounArea } from './components/NounArea';
 import './App.scss';
 
 const baseUrl = 'https://edwardtanguay.netlify.app/share';
@@ -18,19 +19,7 @@ function App() {
 
 	return (
 		<div className="App">
-			<h2>German Nouns</h2>
-			<p>There are {nouns.length} nouns.</p>
-			<div className="nounArea">
-				{nouns.map((noun, i) => {
-					return (
-						<div className="noun" key={i}>
-							<div className="article">{noun.article}</div>
-							<div className="singular">{noun.singular}</div>
-							<div className="plural">{noun.plural}</div>
-						</div>
-					);
-				})}
-			</div>
+			<NounArea nouns={nouns} />
 		</div>
 	);
 }
