@@ -1,2 +1,3 @@
-- .. get data from API and display how many items
+- x get data from API and display how many items
+- 
 
