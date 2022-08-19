@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import './App.css';
+import './App.scss';
 
 const baseUrl = 'https://edwardtanguay.netlify.app/share';
 const flashcardsUrl = `${baseUrl}/flashcards.json`;
@@ -20,15 +20,17 @@ function App() {
 		<div className="App">
 			<h2>German Nouns</h2>
 			<p>There are {nouns.length} nouns.</p>
-			{nouns.map((noun, i) => {
-				return (
-					<div className="noun" key={i}>
-						<div className="article">{noun.article}</div>
-						<div className="singular">{noun.singular}</div>
-						<div className="plural">{noun.plural}</div>
-					</div>
-				)
-			})}
+			<div className="nounArea">
+				{nouns.map((noun, i) => {
+					return (
+						<div className="noun" key={i}>
+							<div className="article">{noun.article}</div>
+							<div className="singular">{noun.singular}</div>
+							<div className="plural">{noun.plural}</div>
+						</div>
+					);
+				})}
+			</div>
 		</div>
 	);
 }
